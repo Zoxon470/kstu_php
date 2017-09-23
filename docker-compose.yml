@@ -3,7 +3,8 @@ services:
   mysql:
     build: ./mysql
     environment:
-      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: kstu_db
     volumes:
       - db:/var/lib/mysql
   php:
